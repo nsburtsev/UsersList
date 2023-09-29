@@ -15,10 +15,12 @@
 		13055AAF2AC21A9E003E4B80 /* MainViewController + TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13055AAE2AC21A9E003E4B80 /* MainViewController + TableView.swift */; };
 		13055AB12AC21B79003E4B80 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13055AB02AC21B79003E4B80 /* MainViewModel.swift */; };
 		136748A12AC2B3E10048E4D1 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136748A02AC2B3E10048E4D1 /* EndPoint.swift */; };
-		136748A32AC2B5500048E4D1 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136748A22AC2B5500048E4D1 /* Users.swift */; };
+		136748A32AC2B5500048E4D1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136748A22AC2B5500048E4D1 /* User.swift */; };
 		136748A62AC2B9670048E4D1 /* URLSession + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136748A52AC2B9670048E4D1 /* URLSession + Extensions.swift */; };
 		136748A82AC2BB270048E4D1 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136748A72AC2BB270048E4D1 /* NetworkError.swift */; };
 		136748AA2AC2BB720048E4D1 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136748A92AC2BB720048E4D1 /* NetworkRequest.swift */; };
+		13CA35CF2AC6C6BB00C67182 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CA35CE2AC6C6BB00C67182 /* DetailsViewController.swift */; };
+		13CA35D12AC6C7D900C67182 /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CA35D02AC6C7D900C67182 /* DetailsViewModel.swift */; };
 		13CF15B32AC5655A00E352D2 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CF15B22AC5655A00E352D2 /* Observable.swift */; };
 		13CF15B52AC5AD4200E352D2 /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CF15B42AC5AD4200E352D2 /* MainCell.swift */; };
 		13CF15B72AC5B6D800E352D2 /* MainCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CF15B62AC5B6D800E352D2 /* MainCellViewModel.swift */; };
@@ -36,10 +38,12 @@
 		13055AAE2AC21A9E003E4B80 /* MainViewController + TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController + TableView.swift"; sourceTree = "<group>"; };
 		13055AB02AC21B79003E4B80 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		136748A02AC2B3E10048E4D1 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
-		136748A22AC2B5500048E4D1 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		136748A22AC2B5500048E4D1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		136748A52AC2B9670048E4D1 /* URLSession + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession + Extensions.swift"; sourceTree = "<group>"; };
 		136748A72AC2BB270048E4D1 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		136748A92AC2BB720048E4D1 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		13CA35CE2AC6C6BB00C67182 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		13CA35D02AC6C7D900C67182 /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
 		13CF15B22AC5655A00E352D2 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		13CF15B42AC5AD4200E352D2 /* MainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
 		13CF15B62AC5B6D800E352D2 /* MainCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCellViewModel.swift; sourceTree = "<group>"; };
@@ -103,6 +107,7 @@
 				13055A992AC2158F003E4B80 /* MainViewController.swift */,
 				13055AAE2AC21A9E003E4B80 /* MainViewController + TableView.swift */,
 				13CF15B42AC5AD4200E352D2 /* MainCell.swift */,
+				13CA35CE2AC6C6BB00C67182 /* DetailsViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -112,6 +117,7 @@
 			children = (
 				13055AB02AC21B79003E4B80 /* MainViewModel.swift */,
 				13CF15B62AC5B6D800E352D2 /* MainCellViewModel.swift */,
+				13CA35D02AC6C7D900C67182 /* DetailsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -119,7 +125,7 @@
 		13055AAC2AC217E4003E4B80 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				136748A22AC2B5500048E4D1 /* Users.swift */,
+				136748A22AC2B5500048E4D1 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -236,6 +242,7 @@
 				136748A62AC2B9670048E4D1 /* URLSession + Extensions.swift in Sources */,
 				13CF15B72AC5B6D800E352D2 /* MainCellViewModel.swift in Sources */,
 				13055A9A2AC2158F003E4B80 /* MainViewController.swift in Sources */,
+				13CA35D12AC6C7D900C67182 /* DetailsViewModel.swift in Sources */,
 				13CF15B32AC5655A00E352D2 /* Observable.swift in Sources */,
 				13CF15B52AC5AD4200E352D2 /* MainCell.swift in Sources */,
 				136748AA2AC2BB720048E4D1 /* NetworkRequest.swift in Sources */,
@@ -244,7 +251,8 @@
 				13D5BAD92AC41B21002ADD24 /* NetworkDataFetch.swift in Sources */,
 				136748A82AC2BB270048E4D1 /* NetworkError.swift in Sources */,
 				13055A982AC2158F003E4B80 /* SceneDelegate.swift in Sources */,
-				136748A32AC2B5500048E4D1 /* Users.swift in Sources */,
+				136748A32AC2B5500048E4D1 /* User.swift in Sources */,
+				13CA35CF2AC6C6BB00C67182 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
